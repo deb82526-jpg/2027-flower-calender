@@ -1,0 +1,172 @@
+/* This styles the whole page background */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fce4f0;
+    margin: 0;
+    padding: 20px;
+}
+
+/* This styles the main title at the top */
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #b5559a;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+/* This styles the small text under the title */
+.subtitle {
+    text-align: center;
+    color: #c98bbf;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+/* This creates the grid that holds all 12 month boxes */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* This styles each individual month box */
+.month-card {
+    background-color: #fff0f8;
+    border: 1px solid #f0c8e0;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* This styles the flower image inside each month */
+.month-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* This styles the pink month name bar */
+.month-name {
+    background: linear-gradient(90deg, #e8a0d0, #c7a0e8);
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+}
+
+/* Styles the inside body of each month card */
+.month-body {
+    padding: 8px;
+}
+
+/* The row showing Su Mo Tu We Th Fr Sa */
+.day-labels {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: #c98bbf;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+}
+
+/* The grid holding all the day numbers */
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    text-align: center;
+}
+
+/* Every day number */
+.days-grid span {
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 4px 2px;
+    border-radius: 50%;
+    color: #7a4a6e;
+}
+
+/* Empty placeholder spans */
+.empty {
+    visibility: hidden;
+}
+
+/* Saturdays - pink */
+.sat {
+    color: #d4589e !important;
+    font-weight: 600 !important;
+    background-color: #fce8f4;
+    border-radius: 50%;
+}
+
+/* Sundays - pink */
+.sun {
+    color: #d4589e !important;
+    font-weight: 600 !important;
+    background-color: #fce8f4;
+    border-radius: 50%;
+}
+
+/* Public holidays - purple gradient */
+.holiday {
+    background: linear-gradient(135deg, #e8a0d0, #c7a0e8);
+    color: white !important;
+    border-radius: 50%;
+    font-weight: 600 !important;
+}
+
+.holidays-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #fff0f8;
+    border-radius: 16px;
+    border: 1px solid #f0c8e0;
+    padding: 20px 30px;
+}
+
+.holidays-section h2 {
+    font-family: 'Playfair Display', serif;
+    color: #b5559a;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.holidays-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.holidays-table thead tr {
+    background: linear-gradient(90deg, #e8a0d0, #c7a0e8);
+}
+
+.holidays-table th {
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.holidays-table td {
+    padding: 10px 15px;
+    color: #7a4a6e;
+    border-bottom: 1px solid #f0c8e0;
+}
+
+.holidays-table tbody tr:nth-child(even) {
+    background-color: #fce8f4;
+}
+
+.holidays-table tbody tr:hover {
+    background-color: #f5d0e8;
+}
